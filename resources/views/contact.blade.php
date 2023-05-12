@@ -62,9 +62,9 @@
           <!-- contact form start -->
             @isset($info)
                 <h2>Bienvenue dans votre espace membre</h2>
-                <h3>Vous etes: {{$info->name}}</h3>
-                <h3>Votre email est: {{$info->email}}</h3>
-                <h3>Votre message est: {{$info->message}}</h3>
+                <h3>Vous êtes: {{$info->name}}</h3>
+                <h3>Votre email de connexion: {{$info->email}}</h3>
+                <h3>Contenu du message: {{$info->message}}</h3>
             @else
           <form method="post" class="row"> 
             @csrf
